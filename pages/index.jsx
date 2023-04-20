@@ -1,8 +1,11 @@
+const { default: HeaderComponent } = require("../components/header")
+
 const HomeView = () => {
   return ( 
     <>
-    {/* Header */}
+    <HeaderComponent/>
     {/* Banner */}
+    <p>This is an airbnb clone</p>
     </>
    );
 }
