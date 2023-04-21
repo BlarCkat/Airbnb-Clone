@@ -9,8 +9,8 @@ const HeaderComponent = () => {
                 <Image src={'/img/airbnb-logo.jpg'} width={90} height={40} className="cursor-pointer"/>
             </div>
             
-            <div className="flex flex-row items-center">
-                <input type="search" name="search" id="search" placeholder="Start your Search" />
+            <div className="flex flex-row justify-between items-center rounded-full border-2 border-neutral-50 px-2 shadow-sm">
+                <input type="text" name="search" id="search" placeholder="Start your Search" className="bg-transparent outline-none flex-grow px-4"/>
                 <HiSearch className="bg-red-400 text-white p-2 rounded-full h-8 w-8 cursor-pointer"/>
             </div>
             
