@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HiSearch } from "react-icons/hi";
+import { HiGlobeAlt, HiMenu, HiSearch, HiUserCircle } from "react-icons/hi";
 
 const HeaderComponent = () => {
     return ( 
@@ -15,6 +15,15 @@ const HeaderComponent = () => {
             </div>
             
             {/* right */}
+            <div className=" text-neutral-500 flex flex-row gap-4 items-center justify-end">
+                <p>Become a Host</p>
+                <HiGlobeAlt size={20}/>
+
+                <div className="flex flex-row gap-2 border-2 p-2 rounded-full hover:shadow-md transition">
+                    <HiMenu size={20}/>
+                    <HiUserCircle size={20}/>
+                </div>
+            </div>
         </header>
         </>
      );
