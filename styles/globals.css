@@ -15,3 +15,8 @@
 body{
     font-family: 'Mont';
 }
+
+
+.homeBanner{
+    object-fit: cover;
+}
