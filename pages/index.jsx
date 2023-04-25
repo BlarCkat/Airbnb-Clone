@@ -14,17 +14,19 @@ const HomeView = ({exploreData}) => {
     {id: '004', locationName: 'London', time: '1 day', image: '/img/illustration_img-2.jpeg'},
     {id: '005', locationName: 'Vienna', time: '18 hours', image: '/img/illustration_img-3.jpeg'},
     {id: '006', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
-    {id: '006', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
-    {id: '006', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
-    {id: '006', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
-    {id: '006', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
+    {id: '007', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
+    {id: '008', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
+    {id: '009', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
+    {id: '010', locationName: 'Paris', time: '18 hours', image: '/img/illustration_img-1.jpeg'},
   ]);
 
   const [allLiveAnywhere, setAllLiveAnywhere] = useState([
     {id: '001', image:'/img/illustration_img-1.jpeg', title: 'Outdoors getaways'},
-    {id: '002', image:'/img/illustration_img-1.jpeg', title: 'Unique Stays'},
-    {id: '003', image:'/img/illustration_img-1.jpeg', title: 'Pet Allowed'},
-    {id: '004', image:'/img/illustration_img-1.jpeg', title: 'Beach Vacations'},
+    {id: '002', image:'/img/illustration_img-2.jpeg', title: 'Unique Stays'},
+    {id: '003', image:'/img/illustration_img-3.jpeg', title: 'Unique Stays'},
+    {id: '004', image:'/img/illustration_img-2.jpeg', title: 'Unique Stays'},
+    {id: '005', image:'/img/illustration_img-1.jpeg', title: 'Pet Allowed'},
+    {id: '006', image:'/img/illustration_img-3.jpeg', title: 'Beach Vacations'},
   ]);
 
   return ( 
@@ -43,10 +45,10 @@ const HomeView = ({exploreData}) => {
         {/* {exploreData} */}
 
       </section>
-      <section>
+      <section className="py-[100px]">
       
         <h2 className="text-3xl font-semibold pb-5">Live Anywhere</h2>
-        <div className="flex flex-row gap-4 overflow-scroll">
+        <div className="flex flex-row gap-2 overflow-scroll sm:scrollbar-hide ">
         {allLiveAnywhere?.map(({image, key, title}) => (
            <MediumCard key={key} image={image} title={title}/>
            ))}

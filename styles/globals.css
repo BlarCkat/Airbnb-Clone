@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Cereal Medium';
-    src: url('/public/fonts/Airbnb_Cereal-Bold.woff2');
+    src: url('../public/fonts/Airbnb_Cereal-Medium.woff2');
 }
 @font-face {
     font-family: 'Cereal Bold';
@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: 'Mont';
+    font-family: 'Cereal Medium';
 }
 
 
