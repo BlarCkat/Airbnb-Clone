@@ -2,15 +2,14 @@
 @tailwind utilities;
 @tailwind components;
 
-/* @font-face {
-    font-family: 'Airbnb Cereal Medium';
+@font-face {
+    font-family: 'Cereal Medium';
     src: url('/public/fonts/Airbnb_Cereal-Bold.woff2');
 }
 @font-face {
-    font-family: 'Airbnb Cereal Bold';
+    font-family: 'Cereal Bold';
     src: url('/public/fonts/Airbnb-Cereal-Bold.ttf');
 }
-} */
 
 body{
     font-family: 'Mont';

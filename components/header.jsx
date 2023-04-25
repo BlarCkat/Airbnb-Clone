@@ -5,7 +5,7 @@ import { FaAirbnb } from "react-icons/fa";
 const HeaderComponent = () => {
     return ( 
         <>
-        <header className="z-50 bg-transparent relative w-full py-2 px-4 shadow-sm md:px-8 flex flex-row justify-between items-center">
+        <header className="z-50 bg-transparent absolute w-full py-2 px-4 shadow-sm md:px-8 flex flex-row justify-between items-center">
             <div className=" relative flex items-center h-fit w-fit gap-2 text-red-500 font-bold">
                 {/* <Image src={'/img/airbnb-logo.jpg'} width={90} height={40} className="cursor-pointer"/> */}
                 <FaAirbnb size={32}/>
@@ -18,8 +18,8 @@ const HeaderComponent = () => {
             </div>
             
             {/* right */}
-            <div className=" text-neutral-400 flex flex-row gap-4 items-center justify-end">
-                <p className="hidden md:inline">Become a Host</p>
+            <div className=" text-white flex flex-row gap-4 items-center justify-end">
+                <p className="hidden md:inline font-bold cursor-pointer">Become a Host</p>
                 <HiGlobeAlt size={20}/>
 
                 <div className="flex flex-row bg-white text-neutral-500 gap-2 border-2 p-2 rounded-full hover:shadow-md transition">
