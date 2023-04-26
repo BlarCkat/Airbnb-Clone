@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { HiGlobeAlt, HiMenu, HiSearch, HiUserCircle } from "react-icons/hi";
 import { FaAirbnb } from "react-icons/fa";
+import { useState } from "react";
 
 const HeaderComponent = () => {
+
+    const [searchInput, setSearchInput] = useState("");
+    console.log(searchInput);
+
     return ( 
         <>
         <header className="z-50 bg-transparent absolute w-full py-2 px-4 shadow-sm md:px-8 flex flex-row justify-between items-center">
@@ -13,7 +18,7 @@ const HeaderComponent = () => {
             </div>
             
             <div className="flex flex-row justify-between items-center bg-white rounded-full border-2 border-neutral-50 px-2 py-2 shadow-sm w-[50%]">
-                <input type="text" name="search" id="search" placeholder="Start your Search" className="bg-transparent outline-none w-full px-4"/>
+                <input type="text" name="search" id="search" placeholder="Start your Search" className="bg-transparent outline-none w-full px-4" value={searchInput} onChange={(event)=>(setSearchInput(event.target.value))}/>
                 <HiSearch className="bg-red-400 md:inline-flex text-white p-2 rounded-full h-8 w-8 cursor-pointer"/>
             </div>
             
@@ -27,6 +32,14 @@ const HeaderComponent = () => {
                     <HiUserCircle size={20}/>
                 </div>
             </div>
+            {searchInput && (
+                <div className="absolute z-30 top-0 left-0 h-[100vh] w-[90vw] flex flex-row justify-center mt-[64px]">
+                    <div className="bg-white w-fit h-fit px-12 py-12 rounded-xl">
+                    <h2>Calendar content</h2>
+                </div>
+                </div>
+            )}
+
         </header>
         </>
      );
