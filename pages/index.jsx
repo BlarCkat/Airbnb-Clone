@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SmallCard from "../components/smallCard";
 import MediumCard from "../components/MediumCard";
+import LargeCard from "../components/LargeCard";
 
 const { default: Banner } = require("../components/banner")
 const { default: HeaderComponent } = require("../components/header")
@@ -55,6 +56,10 @@ const HomeView = ({exploreData}) => {
            </div>
         {/* {exploreData} */}
 
+      </section>
+
+      <section>
+        <LargeCard description={"Pack your things. It's time to ride the waves"} image={'/img/illustration_banner2.png'} title={"Vacation is here!"} actionText={"Get Started"}/>
       </section>
     </main>
     </>

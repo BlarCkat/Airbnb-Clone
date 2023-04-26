@@ -16,6 +16,6 @@ body{
 }
 
 
-.homeBanner{
+.homeBanner, .bottomLargeCard{
     object-fit: cover;
 }
