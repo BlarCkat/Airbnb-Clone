@@ -13,8 +13,8 @@ const HeaderComponent = () => {
         <header className="z-50 bg-transparent absolute w-full py-2 px-4 shadow-sm md:px-8 flex flex-row justify-between items-center">
             <div className=" relative flex items-center h-fit w-fit gap-2 text-red-500 font-bold">
                 {/* <Image src={'/img/airbnb-logo.jpg'} width={90} height={40} className="cursor-pointer"/> */}
-                <FaAirbnb size={32}/>
-                <p className="">airbnb</p>
+                <FaAirbnb size={32} className="text-white"/>
+                <p className="text-white">airbnb</p>
             </div>
             
             <div className="flex flex-row justify-between items-center bg-white rounded-full border-2 border-neutral-50 px-2 py-2 shadow-sm w-[50%]">
