@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HiGlobeAlt, HiMenu, HiSearch, HiUserCircle } from "react-icons/hi";
 import { FaAirbnb } from "react-icons/fa";
 import { useState } from "react";
+import Link from "next/link";
 
 const HeaderComponent = () => {
 
@@ -29,7 +30,9 @@ const HeaderComponent = () => {
 
                 <div className="flex flex-row bg-white text-neutral-500 gap-2 border-2 p-2 rounded-full hover:shadow-md transition">
                     <HiMenu size={20}/>
+                    <Link href={'/profile'}>
                     <HiUserCircle size={20}/>
+                    </Link>
                 </div>
             </div>
             {searchInput && (
